@@ -1,10 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Unit : MonoBehaviour, IDamageable
 {
+    [SerializeField] private GameObject damagePopupParent;
+    [SerializeField] private Transform popupPosition;
+    [SerializeField] private float maxPopupOffset;
+    [SerializeField] private GameObject damagePopup;
     [SerializeField] private int maxHealth;
 
     public int currentHealth { get; set; }
@@ -21,6 +26,7 @@ public class Unit : MonoBehaviour, IDamageable
         currentHealth = Mathf.Max(currentHealth - amount, 0);
 
         onUnitTakeDamage?.Invoke(currentHealth, maxHealth);
+        AddDamagePopup(amount);
 
         if (currentHealth == 0)
         {
@@ -29,6 +35,19 @@ public class Unit : MonoBehaviour, IDamageable
         }
 
         return false;
+    }
+
+    private void AddDamagePopup(int damage)
+    {
+        var popup = Instantiate(damagePopup, popupPosition.position, Quaternion.identity);
+        //popup.transform.parent = damagePopupParent.transform;
+
+        Vector2 randomPos = (Vector2)popupPosition.transform.position;
+        randomPos += new Vector2(UnityEngine.Random.Range(-maxPopupOffset, maxPopupOffset), UnityEngine.Random.Range(-maxPopupOffset, maxPopupOffset));
+        popup.transform.position = randomPos;
+
+        popup.GetComponentInChildren<TextMeshProUGUI>().text = damage.ToString();
+        Destroy(popup, 3f);
     }
 
     public virtual void Die()
