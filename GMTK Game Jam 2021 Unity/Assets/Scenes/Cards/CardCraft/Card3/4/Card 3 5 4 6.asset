@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 101141d1c34405b458725d7303aa9105, type: 3}
+  m_Name: Card 3 5 4 6
+  m_EditorClassIdentifier: 
+  itemsToCraft:
+  - {fileID: 11400000, guid: 94e3711b9ea3f484eafbd97b7716c7bc, type: 2}
+  - {fileID: 11400000, guid: 31f82f044e90ade49b91155ef92ab0ac, type: 2}
+  - {fileID: 11400000, guid: aae838ca7dcca7c4f80530d1c738d763, type: 2}
+  - {fileID: 11400000, guid: 32129895ffa8aa543a91b7752340719e, type: 2}
+  craftedItem: {fileID: 11400000, guid: 0bf70908cb60d6e4f92ed1a5e53b8b8d, type: 2}

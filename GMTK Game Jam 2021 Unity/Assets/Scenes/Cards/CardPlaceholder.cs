@@ -6,19 +6,16 @@ using UnityEngine.UI;
 
 public class CardPlaceholder : MonoBehaviour, IDropHandler
 {
-    [SerializeField] private PossibleCrafts possibleCrafts;
+    [SerializeField] private TurnBase turnBase;
+    public PossibleCrafts possibleCrafts;
 
     [SerializeField] private Sprite defaultCardIcons;
     [SerializeField] private Image[] cardsIcons;
 
-    private List<CardItem> cards = new List<CardItem>();
-    private List<GameObject> cardsGameObjects = new List<GameObject>();
+    public CardDrag[] allCards;
 
-    public void AddItem(CardItem card)
-    {
-        cards.Add(card);
-        
-    }
+    private List<CardDrag> cards = new List<CardDrag>();
+    private List<GameObject> cardsGameObjects = new List<GameObject>();
 
     public void RemoveAllItems()
     {
@@ -33,11 +30,18 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
         }
 
         cardsGameObjects = new List<GameObject>();
-        cards = new List<CardItem>();
+        cards = new List<CardDrag>();
     }
 
     public void CraftFinalCard()
     {
+        if(cards.Count == 0)
+        {
+            //Crafting with 0 cards
+            //play sound for not being able to craft anything since you craft with 0 cards
+            return;
+        }
+
         foreach (CardCrafting cardCrafting in possibleCrafts.allCraftingRecepies)
         {
             if (cardCrafting.itemsToCraft.Count == cards.Count)
@@ -48,11 +52,14 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
                     tempCraft.Add(item);
                 }
 
-                for (int i = 0; i < cards.Count; i++)
+                List<CardDrag> registeredCards = new List<CardDrag>();
+
+                for (int j = 0; j < cards.Count; j++)
                 {
-                    if (tempCraft.Contains(cards[i]))
+                    if (tempCraft.Contains(cards[j].cardItem))
                     {
-                        tempCraft.Remove(cards[i]);
+                        registeredCards.Add(cards[j]);
+                        tempCraft.Remove(cards[j].cardItem);
                     }
                 }
 
@@ -60,6 +67,13 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
                 {
                     //Crafted
                     Debug.Log("Crafted " + cardCrafting.craftedItem);
+
+                    foreach(CardDrag card in registeredCards)
+                    {
+                        card.SetCooldown(card.cardItem.cooldownAfterUse);
+                    }
+
+                    turnBase.PlayerTurnEnd(cardCrafting.craftedItem.damage);
                     RemoveAllItems();
                     return;
                 }
@@ -68,6 +82,7 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
 
         //Wrong craft dont deal damage
         RemoveAllItems();
+        turnBase.PlayerTurnEnd(0);
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -76,7 +91,7 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
         {
             if (eventData.pointerDrag.TryGetComponent<CardDrag>(out CardDrag cardDrag))
             {
-                
+
                 AddCardToCrafting(cardDrag);
             }
         }
@@ -84,14 +99,16 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
 
     private void AddCardToCrafting(CardDrag cardDrag)
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/card_deal", transform.position);
+        if (cardDrag.cardCooldown > 0 || !cardDrag.canUse)
+            return;
+
         cardsGameObjects.Add(cardDrag.gameObject);
-        cards.Add(cardDrag.cardItem);
+        cards.Add(cardDrag);
 
         cardDrag.gameObject.SetActive(false);
 
         cardDrag.ResetCard();
 
-        cardsIcons[cards.Count - 1].sprite = cards[cards.Count - 1].cardIcon;
+        cardsIcons[cards.Count - 1].sprite = cards[cards.Count - 1].cardItem.cardIcon;
     }
 }
