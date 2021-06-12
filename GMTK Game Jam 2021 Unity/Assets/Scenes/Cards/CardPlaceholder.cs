@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class CardPlaceholder : MonoBehaviour, IDropHandler
 {
+    [SerializeField] private TurnBase turnBase;
     [SerializeField] private PossibleCrafts possibleCrafts;
 
     [SerializeField] private Sprite defaultCardIcons;
@@ -59,6 +60,7 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
                 {
                     //Crafted
                     Debug.Log("Crafted " + cardCrafting.craftedItem);
+                    turnBase.PlayerTurnEnd(cardCrafting.craftedItem.damage);
                     RemoveAllItems();
                     return;
                 }
@@ -67,6 +69,7 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
 
         //Wrong craft dont deal damage
         RemoveAllItems();
+        turnBase.PlayerTurnEnd(0);
     }
 
     public void OnDrop(PointerEventData eventData)

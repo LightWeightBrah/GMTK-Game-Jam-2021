@@ -15,56 +15,41 @@ public enum BattleState
 }
 public class TurnBase : MonoBehaviour
 {
-    public GameObject playerPrefab;
-    public GameObject enemyPrefab;
+    [SerializeField] private float waitTimeAfterAttack;
 
-    public Transform playerStart;
-    public Transform enemyStart;
+    [SerializeField] private GameObject playerPrefab;
+    [SerializeField] private GameObject enemyPrefab;
+
+    [SerializeField] private Transform playerStart;
+    [SerializeField] private Transform enemyStart;
 
     public BattleState battleState = BattleState.PlayerTurn;
     public int turnCounter;
 
-    public BattleHud playerHud;
-    public BattleHud enemyHud;
+    [SerializeField] private PlayerController player;
+    [SerializeField] private EnemyController enemy;
 
     private void Start()
     {
         StartBattle();
     }
 
-    void StartBattle()
+    private void StartBattle()
     {
-        GameObject player = Instantiate(playerPrefab, playerStart);
-        //playerUnit=player.GetComponent<>();
-
-        GameObject enemy = Instantiate(enemyPrefab, enemyStart);
-
-        // playerHud.HudSettings();
-        // enemyHud.HudSettings();
+        //GameObject player = Instantiate(playerPrefab, playerStart);
+        //GameObject enemy = Instantiate(enemyPrefab, enemyStart);
 
         battleState = BattleState.PlayerTurn;
-        PlayerTurn();
-    }
-    private void PlayerTurn()
-    {
-        //Player Add cards
-        //player attack or sth
-        Debug.Log("PlayerT");
-
     }
 
-
-    public void PlayerTurnEnd()
+    public void PlayerTurnEnd(int damage)
     {
         if (battleState == BattleState.PlayerTurn)
         {
-            //PlayerTurnEnd
-            //bool isDead = Enemy.TakeDamage(player.damgae)
-
-            //enemyHud.SetHp(enemy.currentHP);
-
             Debug.Log("PlayerEndTurn");
-            /*
+
+            bool isDead = enemy.TakeDamage(damage);
+
             if (isDead)
             {
                 battleState = BattleState.Won;
@@ -73,26 +58,19 @@ public class TurnBase : MonoBehaviour
             else
             {
                 battleState = BattleState.EnemyTurn;
-                EnemyTurn();
+                StartCoroutine(EnemyTurnEnd());
             }
-            */
-
         }
     }
-    private void EnemyTurn()
+
+    public IEnumerator EnemyTurnEnd()
     {
-        //EnemyTurn
-        //enemy attacking or sth
-    }
-    public void EnemyTurnEnd()
-    {
+        yield return new WaitForSeconds(waitTimeAfterAttack);
+
         if (battleState == BattleState.EnemyTurn)
         {
-            //bool isDead =player.TakeDamage(enemy.damage);
-            // playerHud.SetHp(player.currentHP);
+            bool isDead = player.TakeDamage(Random.Range(5, 15));
 
-            //EnemyTurnEnd
-            /*
             if (isDead)
             {
                 battleState = BattleState.Lost;
@@ -100,10 +78,9 @@ public class TurnBase : MonoBehaviour
             }
             else
             {
+                yield return new WaitForSeconds(waitTimeAfterAttack);
                 battleState = BattleState.PlayerTurn;
-                PlayerTurn();
             }
-            */
         }
 
     }
@@ -112,11 +89,11 @@ public class TurnBase : MonoBehaviour
     {
         if (battleState == BattleState.Won)
         {
-            //win
+            Debug.Log("player has won");
         }
         else if (battleState == BattleState.Lost)
         {
-
+            Debug.Log("player has lost");
         }
     }
 }

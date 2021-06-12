@@ -1,20 +1,25 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class BattleHud : MonoBehaviour
 {
+    [SerializeField] private Unit unit;
+    [SerializeField] private Image healthImage;
 
-    public Slider hpSlider;
-
-
-    public void HudSettings()
+    private void OnEnable()
     {
-        //hpSlider.maxValue = maxHp;
-        //hpSlider.value = currentHp;
+        unit.onUnitTakeDamage += UpdateHealth;
     }
-    public void SetHp(int hp)
+
+    private void OnDisable()
     {
-        hpSlider.value = hp;
+        unit.onUnitTakeDamage -= UpdateHealth;
+    }
+
+    private void UpdateHealth(float currHealth, float maxHealth)
+    {
+        healthImage.fillAmount = currHealth / maxHealth;
     }
 }
