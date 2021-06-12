@@ -17,6 +17,7 @@ public class TurnBase : MonoBehaviour
 {
     [SerializeField] private CardPlaceholder cardPlaceholder;
     [SerializeField] private float waitTimeAfterAttack;
+    [SerializeField] private int chanceForEnemyToMiss;
 
     [SerializeField] private GameObject playerPrefab;
     [SerializeField] private GameObject enemyPrefab;
@@ -77,7 +78,21 @@ public class TurnBase : MonoBehaviour
 
         if (battleState == BattleState.EnemyTurn)
         {
-            bool isDead = player.TakeDamage(Random.Range(5, 15));
+            int random = Random.Range(0, 100);
+            bool isDead;
+
+            if (random > chanceForEnemyToMiss)
+            {
+                int index = Random.Range(0, cardPlaceholder.possibleCrafts.allCraftingRecepies.Count);
+                isDead = player.TakeDamage(cardPlaceholder.possibleCrafts.allCraftingRecepies[index].craftedItem.damage);
+                //Enemy damage player
+            }
+            else
+            {
+                isDead = player.TakeDamage(0);
+                //enemy miss
+            }
+
 
             if (isDead)
             {

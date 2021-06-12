@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class CardPlaceholder : MonoBehaviour, IDropHandler
 {
     [SerializeField] private TurnBase turnBase;
-    [SerializeField] private PossibleCrafts possibleCrafts;
+    public PossibleCrafts possibleCrafts;
 
     [SerializeField] private Sprite defaultCardIcons;
     [SerializeField] private Image[] cardsIcons;
