@@ -15,6 +15,7 @@ public enum BattleState
 }
 public class TurnBase : MonoBehaviour
 {
+    [SerializeField] private CardPlaceholder cardPlaceholder;
     [SerializeField] private float waitTimeAfterAttack;
 
     [SerializeField] private GameObject playerPrefab;
@@ -58,6 +59,13 @@ public class TurnBase : MonoBehaviour
             else
             {
                 battleState = BattleState.EnemyTurn;
+
+                foreach (CardDrag card in cardPlaceholder.allCards)
+                {
+                    card.SetCooldown(card.cardCooldown - 1);
+                    card.canUse = false;
+                }
+
                 StartCoroutine(EnemyTurnEnd());
             }
         }
@@ -80,6 +88,10 @@ public class TurnBase : MonoBehaviour
             {
                 yield return new WaitForSeconds(waitTimeAfterAttack);
                 battleState = BattleState.PlayerTurn;
+
+                foreach (CardDrag card in cardPlaceholder.allCards)
+                    card.canUse = true;
+
             }
         }
 

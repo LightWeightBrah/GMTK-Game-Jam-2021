@@ -583,6 +583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardItem: {fileID: 11400000, guid: a3726d0c6288acd47a7ca62f323e6f61, type: 2}
   canvas: {fileID: 1361059614}
+  cooldownText: {fileID: 287822186}
 --- !u!114 &303216909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2133,6 +2134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4249f668616fe449b20c15622090ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardPlaceholder: {fileID: 1250518211}
   waitTimeAfterAttack: 2
   playerPrefab: {fileID: 0}
   enemyPrefab: {fileID: 0}
@@ -2263,6 +2265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardItem: {fileID: 11400000, guid: c157b286f8e733e47b7e07a3bb32a4b0, type: 2}
   canvas: {fileID: 1361059614}
+  cooldownText: {fileID: 538280914}
 --- !u!225 &1512358040
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2642,6 +2645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardItem: {fileID: 11400000, guid: a3726d0c6288acd47a7ca62f323e6f61, type: 2}
   canvas: {fileID: 1361059614}
+  cooldownText: {fileID: 1298267564}
 --- !u!114 &2064257992
 MonoBehaviour:
   m_ObjectHideFlags: 0
