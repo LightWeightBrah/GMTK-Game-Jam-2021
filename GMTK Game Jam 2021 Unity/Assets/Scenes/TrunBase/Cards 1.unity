@@ -1799,6 +1799,10 @@ MonoBehaviour:
   - {fileID: 1835567881}
   - {fileID: 30657076}
   - {fileID: 1532055427}
+  allCards:
+  - {fileID: 1512358039}
+  - {fileID: 2064257991}
+  - {fileID: 303216908}
 --- !u!1 &1298267562
 GameObject:
   m_ObjectHideFlags: 0
@@ -2136,6 +2140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardPlaceholder: {fileID: 1250518211}
   waitTimeAfterAttack: 2
+  chanceForEnemyToMiss: 30
   playerPrefab: {fileID: 0}
   enemyPrefab: {fileID: 0}
   playerStart: {fileID: 0}
