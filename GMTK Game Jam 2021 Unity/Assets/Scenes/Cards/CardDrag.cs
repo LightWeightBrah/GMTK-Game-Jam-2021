@@ -27,7 +27,6 @@ public class CardDrag : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDrag
     {
         cardCooldown = Mathf.Max(cooldown, 0);
         cooldownText.text = cardCooldown.ToString();
-        Debug.Log("setting cooldown to " + cooldown);
     }
 
     public void ResetCard()

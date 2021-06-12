@@ -48,8 +48,6 @@ public class TurnBase : MonoBehaviour
     {
         if (battleState == BattleState.PlayerTurn)
         {
-            Debug.Log("PlayerEndTurn");
-
             bool isDead = enemy.TakeDamage(damage);
 
             if (isDead)
