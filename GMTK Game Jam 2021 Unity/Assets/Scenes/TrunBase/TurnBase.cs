@@ -75,6 +75,8 @@ public class TurnBase : MonoBehaviour
     {
         yield return new WaitForSeconds(waitTimeAfterAttack);
 
+        Debug.Log("Enemy turn");
+
         if (battleState == BattleState.EnemyTurn)
         {
             int random = Random.Range(0, 100);
@@ -93,19 +95,22 @@ public class TurnBase : MonoBehaviour
             }
 
 
+            Debug.Log("dead " + isDead);
+
             if (isDead)
             {
                 battleState = BattleState.Lost;
                 EndBattle();
+                Debug.Log("lost");
             }
             else
             {
+                Debug.Log("player turn");
                 yield return new WaitForSeconds(waitTimeAfterAttack);
                 battleState = BattleState.PlayerTurn;
 
                 foreach (CardDrag card in cardPlaceholder.allCards)
                     card.canUse = true;
-
             }
         }
 
