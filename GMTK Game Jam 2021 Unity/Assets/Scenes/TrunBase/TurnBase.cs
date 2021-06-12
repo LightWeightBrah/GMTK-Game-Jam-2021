@@ -48,7 +48,7 @@ public class TurnBase : MonoBehaviour
     private void PlayerTurn()
     {
         //Player Add cards
-        //bool isDead = Enemy.TakeDamage(player.damgae)
+        //player attack or sth
         Debug.Log("PlayerT");
 
     }
@@ -59,6 +59,8 @@ public class TurnBase : MonoBehaviour
         if (battleState == BattleState.PlayerTurn)
         {
             //PlayerTurnEnd
+            //bool isDead = Enemy.TakeDamage(player.damgae)
+
             //enemyHud.SetHp(enemy.currentHP);
 
             Debug.Log("PlayerEndTurn");
@@ -80,14 +82,15 @@ public class TurnBase : MonoBehaviour
     private void EnemyTurn()
     {
         //EnemyTurn
-        //bool isDead =player.TakeDamage(enemy.damage);
-        // playerHud.SetHp(player.currentHP);
-
+        //enemy attacking or sth
     }
     public void EnemyTurnEnd()
     {
         if (battleState == BattleState.EnemyTurn)
         {
+            //bool isDead =player.TakeDamage(enemy.damage);
+            // playerHud.SetHp(player.currentHP);
+
             //EnemyTurnEnd
             /*
             if (isDead)
@@ -100,7 +103,7 @@ public class TurnBase : MonoBehaviour
                 battleState = BattleState.PlayerTurn;
                 PlayerTurn();
             }
-            */            
+            */
         }
 
     }
