@@ -17,6 +17,7 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
     public void AddItem(CardItem card)
     {
         cards.Add(card);
+        
     }
 
     public void RemoveAllItems()
@@ -68,6 +69,7 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
         {
             if(eventData.pointerDrag.TryGetComponent<CardDrag>(out CardDrag cardDrag))
             {
+                
                 AddCardToCrafting(cardDrag);
             }
         }
@@ -75,6 +77,7 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
 
     private void AddCardToCrafting(CardDrag cardDrag)
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/card_deal", transform.position);
         cardsGameObjects.Add(cardDrag.gameObject);
         cards.Add(cardDrag.cardItem);
 

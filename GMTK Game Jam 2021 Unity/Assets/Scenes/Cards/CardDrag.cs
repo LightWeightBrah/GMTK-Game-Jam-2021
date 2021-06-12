@@ -34,6 +34,7 @@ public class CardDrag : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDrag
     public void OnDrag(PointerEventData eventData)
     {
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        
     }
 
     public void OnEndDrag(PointerEventData eventData)
