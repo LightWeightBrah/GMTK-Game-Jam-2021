@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "new Card", menuName = "Cards")]
-public class Card : ScriptableObject
+[CreateAssetMenu(fileName = "new Card Item", menuName = "Cards/Items")]
+public class CardItem : ScriptableObject
 {
     public string cardSound;
 }
