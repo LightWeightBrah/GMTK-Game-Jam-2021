@@ -91,6 +91,7 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
         {
             if (eventData.pointerDrag.TryGetComponent<CardDrag>(out CardDrag cardDrag))
             {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/card_deal", transform.position);
 
                 AddCardToCrafting(cardDrag);
             }

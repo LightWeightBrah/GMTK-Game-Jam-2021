@@ -41,6 +41,7 @@ public class CardDrag : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDrag
             return;
 
         canvasGroup.blocksRaycasts = false;
+        FMODUnity.RuntimeManager.PlayOneShot("event:/card_grab", transform.position);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -56,7 +57,7 @@ public class CardDrag : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDrag
     {
         if (cardCooldown > 0 || !canUse)
             return;
-
+        
         ResetCard();
     }
     
