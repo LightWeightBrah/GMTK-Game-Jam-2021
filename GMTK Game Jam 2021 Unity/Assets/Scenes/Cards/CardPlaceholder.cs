@@ -21,12 +21,12 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
 
     public void RemoveAllItems()
     {
-        foreach(GameObject cardGameObject in cardsGameObjects)
+        foreach (GameObject cardGameObject in cardsGameObjects)
         {
             cardGameObject.SetActive(true);
         }
 
-        foreach(Image icon in cardsIcons)
+        foreach (Image icon in cardsIcons)
         {
             icon.sprite = defaultCardIcons;
         }
@@ -37,36 +37,43 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
 
     public void CraftFinalCard()
     {
-        foreach(CardCrafting cardCrafting in possibleCrafts.allCraftingRecepies)
+        foreach (CardCrafting cardCrafting in possibleCrafts.allCraftingRecepies)
         {
-            if(cardCrafting.itemsToCraft.Count == cards.Count)
+            if (cardCrafting.itemsToCraft.Count == cards.Count)
             {
-                int itemsCount = 0;
+                List<CardItem> tempCraft = new List<CardItem>();
+                foreach(CardItem item in cardCrafting.itemsToCraft)
+                {
+                    tempCraft.Add(item);
+                }
 
                 for (int i = 0; i < cards.Count; i++)
                 {
-                    if(cardCrafting.itemsToCraft.Contains(cards[i]))
+                    if (tempCraft.Contains(cards[i]))
                     {
-                        itemsCount++;
+                        tempCraft.Remove(cards[i]);
                     }
                 }
 
-                if(itemsCount == cards.Count)
+                if (tempCraft.Count == 0)
                 {
                     //Crafted
                     Debug.Log("Crafted " + cardCrafting.craftedItem);
+                    RemoveAllItems();
+                    return;
                 }
             }
         }
 
+        //Wrong craft dont deal damage
         RemoveAllItems();
     }
 
     public void OnDrop(PointerEventData eventData)
     {
-        if(eventData.pointerDrag != null)
+        if (eventData.pointerDrag != null)
         {
-            if(eventData.pointerDrag.TryGetComponent<CardDrag>(out CardDrag cardDrag))
+            if (eventData.pointerDrag.TryGetComponent<CardDrag>(out CardDrag cardDrag))
             {
                 AddCardToCrafting(cardDrag);
             }
