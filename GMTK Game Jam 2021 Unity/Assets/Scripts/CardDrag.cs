@@ -5,6 +5,8 @@ using UnityEngine.EventSystems;
 
 public class CardDrag : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDragHandler
 {
+    public CardItem cardItem;
+
     [SerializeField] private Canvas canvas;
 
     private RectTransform rectTransform;
