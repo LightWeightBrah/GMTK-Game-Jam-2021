@@ -545,10 +545,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 303216905}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a00ff014f125dfb46956cad8b8e42fc4, type: 3}
+  m_Script: {fileID: 11500000, guid: 7100c6bebd5cf8c4ea3191bb467ff6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardItem: {fileID: 11400000, guid: c157b286f8e733e47b7e07a3bb32a4b0, type: 2}
+  cardItem: {fileID: 11400000, guid: 94e3711b9ea3f484eafbd97b7716c7bc, type: 2}
   canvas: {fileID: 1361059614}
 --- !u!114 &303216909
 MonoBehaviour:
@@ -1313,7 +1313,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1250518212}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CardPlaceholder, Assembly-CSharp
         m_MethodName: RemoveAllItems
         m_Mode: 1
@@ -1608,7 +1608,7 @@ GameObject:
   - component: {fileID: 1250518208}
   - component: {fileID: 1250518210}
   - component: {fileID: 1250518209}
-  - component: {fileID: 1250518212}
+  - component: {fileID: 1250518211}
   m_Layer: 5
   m_Name: CardsPlaceholder
   m_TagString: Untagged
@@ -1680,7 +1680,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1250518207}
   m_CullTransparentMesh: 1
---- !u!114 &1250518212
+--- !u!114 &1250518211
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1689,11 +1689,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1250518207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c231d56787116554582c3e42449008c3, type: 3}
+  m_Script: {fileID: 11500000, guid: b576c6e5fb7167a49b5394f958abf10f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleCrafts:
-  - {fileID: 11400000, guid: 0a73cdfd07bfdc5429454b25d6ead11d, type: 2}
+  possibleCrafts: []
 --- !u!1 &1298267562
 GameObject:
   m_ObjectHideFlags: 0
@@ -2161,7 +2160,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1512358035}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a00ff014f125dfb46956cad8b8e42fc4, type: 3}
+  m_Script: {fileID: 11500000, guid: 7100c6bebd5cf8c4ea3191bb467ff6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cardItem: {fileID: 11400000, guid: c157b286f8e733e47b7e07a3bb32a4b0, type: 2}
@@ -2261,7 +2260,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1250518212}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CardPlaceholder, Assembly-CSharp
         m_MethodName: CraftFinalCard
         m_Mode: 1
@@ -2387,6 +2386,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570625131}
   m_CullTransparentMesh: 1
+--- !u!1 &1691313294
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1691313296}
+  - component: {fileID: 1691313295}
+  m_Layer: 0
+  m_Name: PossibleCrafts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1691313295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691313294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd2c732605b37f24faa6ccb8556283e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allCraftingRecepies:
+  - {fileID: 11400000, guid: 3ad58cd8587bf0648a35f5f8db3f7863, type: 2}
+--- !u!4 &1691313296
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691313294}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2064257988
 GameObject:
   m_ObjectHideFlags: 0
@@ -2449,10 +2493,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2064257988}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a00ff014f125dfb46956cad8b8e42fc4, type: 3}
+  m_Script: {fileID: 11500000, guid: 7100c6bebd5cf8c4ea3191bb467ff6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardItem: {fileID: 11400000, guid: c157b286f8e733e47b7e07a3bb32a4b0, type: 2}
+  cardItem: {fileID: 11400000, guid: 94e3711b9ea3f484eafbd97b7716c7bc, type: 2}
   canvas: {fileID: 1361059614}
 --- !u!114 &2064257992
 MonoBehaviour:

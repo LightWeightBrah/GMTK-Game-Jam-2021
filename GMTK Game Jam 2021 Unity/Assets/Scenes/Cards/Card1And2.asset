@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 101141d1c34405b458725d7303aa9105, type: 3}
-  m_Name: CraftingCard3
+  m_Name: Card1And2
   m_EditorClassIdentifier: 
   itemsToCraft:
-  - {fileID: 11400000, guid: 05413b9490908d341b27cd9d74a6a51d, type: 2}
   - {fileID: 11400000, guid: c157b286f8e733e47b7e07a3bb32a4b0, type: 2}
-  craftedItem: {fileID: 11400000, guid: 777cd05a5d70a6f4c8150f0e940f0c6a, type: 2}
+  - {fileID: 11400000, guid: 94e3711b9ea3f484eafbd97b7716c7bc, type: 2}
+  craftedItem: {fileID: 11400000, guid: fcd4aef44d0bd2d479d7471d9d268e96, type: 2}

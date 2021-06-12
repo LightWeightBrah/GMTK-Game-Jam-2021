@@ -5,9 +5,15 @@ using UnityEngine.EventSystems;
 
 public class CardPlaceholder : MonoBehaviour, IDropHandler
 {
-    [SerializeField] private List<CardCrafting> possibleCrafts = new List<CardCrafting>();
+    [SerializeField] private List<CardCrafting> possibleCrafts;
 
     private List<CardItem> cards = new List<CardItem>();
+    private List<GameObject> cardsGameObjects = new List<GameObject>();
+
+    private void Awake()
+    {
+        possibleCrafts = FindObjectOfType<PossibleCrafts>().allCraftingRecepies;
+    }
 
     public void AddItem(CardItem card)
     {
@@ -16,6 +22,12 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
 
     public void RemoveAllItems()
     {
+        foreach(GameObject cardGameObject in cardsGameObjects)
+        {
+            cardGameObject.SetActive(true);
+        }
+
+        cardsGameObjects = new List<GameObject>();
         cards = new List<CardItem>();
     }
 
@@ -50,8 +62,10 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
         {
             if(eventData.pointerDrag.TryGetComponent<CardDrag>(out CardDrag cardDrag))
             {
-                cardDrag.gameObject.SetActive(false);
+                cardsGameObjects.Add(cardDrag.gameObject);
                 cards.Add(cardDrag.cardItem);
+
+                cardDrag.gameObject.SetActive(false);
             }
         }
     }
