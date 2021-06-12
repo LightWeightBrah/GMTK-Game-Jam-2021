@@ -37,7 +37,7 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
     {
         if(cards.Count == 0)
         {
-            //Crafting with 0 cards 
+            //Crafting with 0 cards
             //play sound for not being able to craft anything since you craft with 0 cards
             return;
         }
@@ -91,6 +91,7 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
         {
             if (eventData.pointerDrag.TryGetComponent<CardDrag>(out CardDrag cardDrag))
             {
+
                 AddCardToCrafting(cardDrag);
             }
         }
