@@ -15,4 +15,5 @@ MonoBehaviour:
   itemsToCraft:
   - {fileID: 11400000, guid: c157b286f8e733e47b7e07a3bb32a4b0, type: 2}
   - {fileID: 11400000, guid: a3726d0c6288acd47a7ca62f323e6f61, type: 2}
-  craftedItem: {fileID: 11400000, guid: fcd4aef44d0bd2d479d7471d9d268e96, type: 2}
+  - {fileID: 11400000, guid: 31f82f044e90ade49b91155ef92ab0ac, type: 2}
+  craftedItem: {fileID: 11400000, guid: ba1921eb77aea65479be15b4ada81d64, type: 2}
