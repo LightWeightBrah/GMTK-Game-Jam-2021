@@ -10,10 +10,16 @@ public class SettingBehaviour : MonoBehaviour
     [SerializeField] private Slider masterSilder;
     [SerializeField] private Slider sfxSilder;
     [SerializeField] private Slider musicSilder;
+    FMOD.Studio.Bus busMaster;
+    FMOD.Studio.Bus busSFX;
+    FMOD.Studio.Bus busMusic;
 
     private void Awake()
     {
         SetSettingsToCurrentValues();
+        busMaster = FMODUnity.RuntimeManager.GetBus("bus:/Master");
+        busSFX = FMODUnity.RuntimeManager.GetBus("bus:/Master/SFX");
+        busMusic = FMODUnity.RuntimeManager.GetBus("bus:/Master/Music");
     }
 
     public void OnMasterVolumeChanged(float volume)
@@ -21,18 +27,21 @@ public class SettingBehaviour : MonoBehaviour
         gameSettingsData.MasterVolume = volume;
         Debug.Log("settings master to " + gameSettingsData.MasterVolume);
         //change volume of master
+        busMaster.setVolume(volume);
     }
     public void OnSfxVolumeChanged(float volume)
     {
         gameSettingsData.SfxVolume = volume;
         Debug.Log("settings sfx to " + gameSettingsData.SfxVolume);
         //change volume of sfx
+        busSFX.setVolume(volume);
     }
     public void OnMusicVolumeChanged(float volume)
     {
         gameSettingsData.MusicVolume = volume;
         Debug.Log("settings music to " + gameSettingsData.MusicVolume);
         //change volume of music
+        busMusic.setVolume(volume);
     }
 
     private void SetSettingsToCurrentValues()
