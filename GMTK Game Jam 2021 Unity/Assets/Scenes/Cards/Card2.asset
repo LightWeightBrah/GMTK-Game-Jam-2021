@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Card2
   m_EditorClassIdentifier: 
   cardSound: 
+  cardIcon: {fileID: 21300000, guid: 3667f0c334158a641b4b7b94fdff7457, type: 3}

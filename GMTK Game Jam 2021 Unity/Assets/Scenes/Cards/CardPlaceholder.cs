@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class CardPlaceholder : MonoBehaviour, IDropHandler
 {
     [SerializeField] private PossibleCrafts possibleCrafts;
+
+    [SerializeField] private Sprite defaultCardIcons;
+    [SerializeField] private Image[] cardsIcons;
 
     private List<CardItem> cards = new List<CardItem>();
     private List<GameObject> cardsGameObjects = new List<GameObject>();
@@ -20,6 +24,11 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
         foreach(GameObject cardGameObject in cardsGameObjects)
         {
             cardGameObject.SetActive(true);
+        }
+
+        foreach(Image icon in cardsIcons)
+        {
+            icon.sprite = defaultCardIcons;
         }
 
         cardsGameObjects = new List<GameObject>();
@@ -49,6 +58,8 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
                 }
             }
         }
+
+        RemoveAllItems();
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -57,11 +68,20 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
         {
             if(eventData.pointerDrag.TryGetComponent<CardDrag>(out CardDrag cardDrag))
             {
-                cardsGameObjects.Add(cardDrag.gameObject);
-                cards.Add(cardDrag.cardItem);
-
-                cardDrag.gameObject.SetActive(false);
+                AddCardToCrafting(cardDrag);
             }
         }
+    }
+
+    private void AddCardToCrafting(CardDrag cardDrag)
+    {
+        cardsGameObjects.Add(cardDrag.gameObject);
+        cards.Add(cardDrag.cardItem);
+
+        cardDrag.gameObject.SetActive(false);
+
+        cardDrag.ResetCard();
+
+        cardsIcons[cards.Count - 1].sprite = cards[cards.Count - 1].cardIcon;
     }
 }

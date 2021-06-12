@@ -20,6 +20,12 @@ public class CardDrag : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDrag
         startPosition = rectTransform.anchoredPosition;
     }
 
+    public void ResetCard()
+    {
+        rectTransform.anchoredPosition = startPosition;
+        canvasGroup.blocksRaycasts = true;
+    }
+
     public void OnBeginDrag(PointerEventData eventData)
     {
         canvasGroup.blocksRaycasts = false;
@@ -32,8 +38,7 @@ public class CardDrag : MonoBehaviour, IDragHandler, IEndDragHandler, IBeginDrag
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        rectTransform.anchoredPosition = startPosition;
-        canvasGroup.blocksRaycasts = true;
+        ResetCard();
     }
     
 
