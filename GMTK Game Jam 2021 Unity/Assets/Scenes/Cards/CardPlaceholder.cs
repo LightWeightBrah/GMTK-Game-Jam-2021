@@ -5,15 +5,10 @@ using UnityEngine.EventSystems;
 
 public class CardPlaceholder : MonoBehaviour, IDropHandler
 {
-    [SerializeField] private List<CardCrafting> possibleCrafts;
+    [SerializeField] private PossibleCrafts possibleCrafts;
 
     private List<CardItem> cards = new List<CardItem>();
     private List<GameObject> cardsGameObjects = new List<GameObject>();
-
-    private void Awake()
-    {
-        possibleCrafts = FindObjectOfType<PossibleCrafts>().allCraftingRecepies;
-    }
 
     public void AddItem(CardItem card)
     {
@@ -33,7 +28,7 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
 
     public void CraftFinalCard()
     {
-        foreach(CardCrafting cardCrafting in possibleCrafts)
+        foreach(CardCrafting cardCrafting in possibleCrafts.allCraftingRecepies)
         {
             if(cardCrafting.itemsToCraft.Count == cards.Count)
             {

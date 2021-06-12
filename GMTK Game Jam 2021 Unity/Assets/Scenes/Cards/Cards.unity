@@ -1313,7 +1313,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1250518211}
         m_TargetAssemblyTypeName: CardPlaceholder, Assembly-CSharp
         m_MethodName: RemoveAllItems
         m_Mode: 1
@@ -1692,7 +1692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b576c6e5fb7167a49b5394f958abf10f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  possibleCrafts: []
+  possibleCrafts: {fileID: 1691313295}
 --- !u!1 &1298267562
 GameObject:
   m_ObjectHideFlags: 0
@@ -2260,7 +2260,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1250518211}
         m_TargetAssemblyTypeName: CardPlaceholder, Assembly-CSharp
         m_MethodName: CraftFinalCard
         m_Mode: 1
