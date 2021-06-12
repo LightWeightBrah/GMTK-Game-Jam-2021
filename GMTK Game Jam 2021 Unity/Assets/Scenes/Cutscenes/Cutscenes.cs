@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Cutscenes : MonoBehaviour
 {
+    [SerializeField] private string sceneToLoadAfterCutScenes;
     [SerializeField] private GameObject[] cutscenes;
 
     [SerializeField] private Image fadeScreen;
@@ -57,6 +58,7 @@ public class Cutscenes : MonoBehaviour
 
     public IEnumerator ShowNextCutscene()
     {
+        Debug.Log("Showing");
         StartFadeToBlack();
 
         yield return new WaitForSeconds(waitToLoad);
@@ -65,8 +67,7 @@ public class Cutscenes : MonoBehaviour
 
         if (counter + 1 == cutscenes.Length)
         {
-            Debug.Log("Changing scene");
-            SceneManager.LoadScene("Cards");
+            SceneManager.LoadScene(sceneToLoadAfterCutScenes);
         }
         else
         {

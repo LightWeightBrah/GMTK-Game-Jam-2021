@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TrunBase/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu/MainMenu.unity
     guid: 487fcb8b8453be14a89e0728bd801b89
   - enabled: 1
@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscenes/Cutscenes.unity
     guid: 20f7e14abafe49e4bbba7bbf2152af90
+  - enabled: 1
+    path: Assets/Scenes/TrunBase/TurnBaseTest.unity
+    guid: dd183cfefef7ca946bfb017c90442247
   m_configObjects: {}

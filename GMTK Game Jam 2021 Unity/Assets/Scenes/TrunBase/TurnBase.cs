@@ -15,6 +15,7 @@ public enum BattleState
 }
 public class TurnBase : MonoBehaviour
 {
+    [SerializeField] private Cutscenes cutscenes;
     [SerializeField] private CardPlaceholder cardPlaceholder;
     [SerializeField] private float waitTimeAfterAttack;
     [SerializeField] private int chanceForEnemyToMiss;
@@ -110,11 +111,12 @@ public class TurnBase : MonoBehaviour
 
     }
 
-    void EndBattle()
+    private void EndBattle()
     {
         if (battleState == BattleState.Won)
         {
-            Debug.Log("player has won");
+            Debug.Log("winning");
+            cutscenes.PlayGame();
         }
         else if (battleState == BattleState.Lost)
         {
