@@ -8,12 +8,6 @@ public class TurnBase : MonoBehaviour
     public int Turn=0;
     public int TurnCounter;
 
-
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         Turns();
@@ -44,10 +38,11 @@ public class TurnBase : MonoBehaviour
 
     public void PlayerTurnEnd()
     {
+
         if (Turn==0)
         {
             //PlayerTurnEnd
-            //Card[].Cooldown --;
+     
             Turn++;
             Debug.Log("PlayerEndTurn");
         }
