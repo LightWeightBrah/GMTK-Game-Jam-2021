@@ -5,15 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/TrunBase/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
-    path: Assets/Scenes/MainMenu/MainMenu.unity
-    guid: 487fcb8b8453be14a89e0728bd801b89
-  - enabled: 1
-    path: Assets/Scenes/Cards/Cards.unity
-    guid: b413f04f15c53bb4a8e501eef5c6a32e
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Cutscenes/Cutscenes.unity
     guid: 20f7e14abafe49e4bbba7bbf2152af90
