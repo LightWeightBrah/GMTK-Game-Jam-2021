@@ -16,7 +16,7 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
 
     private List<CardDrag> cards = new List<CardDrag>();
     private List<GameObject> cardsGameObjects = new List<GameObject>();
-
+    private string cardName;
     public void RemoveAllItems()
     {
         foreach (GameObject cardGameObject in cardsGameObjects)
@@ -31,6 +31,7 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
 
         cardsGameObjects = new List<GameObject>();
         cards = new List<CardDrag>();
+        ResetFMODCardPar();
     }
 
     public void CraftFinalCard()
@@ -39,6 +40,7 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
         {
             //Crafting with 0 cards
             //play sound for not being able to craft anything since you craft with 0 cards
+            FMODUnity.RuntimeManager.PlayOneShot("event:/no_card", transform.position);
             return;
         }
 
@@ -66,6 +68,7 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
                 if (tempCraft.Count == 0)
                 {
                     //Crafted
+                    
                     Debug.Log("Crafted " + cardCrafting.craftedItem);
 
                     foreach(CardDrag card in registeredCards)
@@ -79,10 +82,12 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
                 }
             }
         }
-
+        FMODUnity.RuntimeManager.PlayOneShot("event:/cards_music", transform.position);
+        Debug.Log("crafted");
         //Wrong craft dont deal damage
-        RemoveAllItems();
+        Invoke("RemoveAllItems", 2.9f);
         turnBase.PlayerTurnEnd(0);
+        
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -92,7 +97,9 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
             if (eventData.pointerDrag.TryGetComponent<CardDrag>(out CardDrag cardDrag))
             {
                 FMODUnity.RuntimeManager.PlayOneShot("event:/card_deal", transform.position);
+                Debug.Log("added" + cardDrag.cardItem.name);
 
+                FMODUnity.RuntimeManager.StudioSystem.setParameterByName(cardDrag.cardItem.name, 1f);
                 AddCardToCrafting(cardDrag);
             }
         }
@@ -105,11 +112,23 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
 
         cardsGameObjects.Add(cardDrag.gameObject);
         cards.Add(cardDrag);
-
+        
+        
         cardDrag.gameObject.SetActive(false);
 
         cardDrag.ResetCard();
 
         cardsIcons[cards.Count - 1].sprite = cards[cards.Count - 1].cardItem.cardIcon;
+    }
+
+    private void ResetFMODCardPar()
+    {
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Card 1", 0f);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Card 2", 0f);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Card 3", 0f);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Card 4", 0f);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Card 5", 0f);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Card 6", 0f);
+
     }
 }
