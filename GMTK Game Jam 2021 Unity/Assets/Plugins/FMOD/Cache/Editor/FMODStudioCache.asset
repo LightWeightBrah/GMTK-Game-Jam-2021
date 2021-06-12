@@ -38,12 +38,35 @@ MonoBehaviour:
   Path: Assets/FMODbanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637591311100000000
+  lastModified: 637591358804501127
   LoadResult: 0
   FileSizes:
   - Name: Desktop
     Value: 1012
   Exists: 1
+--- !u!114 &-1445657528889111830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/card_grab
+  m_EditorClassIdentifier: 
+  Path: event:/card_grab
+  guid: 5c71cf982e345a4b85e3e1341448d636
+  Banks:
+  - {fileID: 7127030952867443989}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 4.4
+  MaxDistance: 20
+  Length: 500
 --- !u!114 &-1261445197686160794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,12 +108,14 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: 9211946783153624192}
   - {fileID: -1702351062992846599}
+  - {fileID: 8447633781938970792}
+  - {fileID: -1445657528889111830}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7127030952867443989}
   StringsBanks:
   - {fileID: -1505498499204713920}
-  stringsBankWriteTime: 637591311100000000
+  stringsBankWriteTime: 637591358804501127
   cacheVersion: 6
 --- !u!114 &3184339392313673367
 MonoBehaviour:
@@ -130,10 +155,33 @@ MonoBehaviour:
   Path: Assets/FMODbanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637591311100000000
+  lastModified: 637591358804451097
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &8447633781938970792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music
+  m_EditorClassIdentifier: 
+  Path: event:/music
+  guid: 1399e1180887ab4b8373e374c1d1ea68
+  Banks:
+  - {fileID: 7127030952867443989}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 63033
 --- !u!114 &9211946783153624192
 MonoBehaviour:
   m_ObjectHideFlags: 0
