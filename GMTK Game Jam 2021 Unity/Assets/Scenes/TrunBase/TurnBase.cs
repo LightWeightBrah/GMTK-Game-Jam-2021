@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class TurnBase : MonoBehaviour
 {
-
-    public int Turn=0;
-    public int TurnCounter;
+    public enum BattleState
+    {
+        PlayerTurn,
+        EnemyTurn
+    }
+    public BattleState battleState = BattleState.PlayerTurn;
+    public int turnCounter;
 
     void Update()
     {
@@ -16,7 +20,7 @@ public class TurnBase : MonoBehaviour
 
     private void Turns()
     {
-        if (Turn==0)
+        if (battleState == BattleState.PlayerTurn)
         {
             PlayerTurn();
         }
@@ -28,7 +32,7 @@ public class TurnBase : MonoBehaviour
     private void PlayerTurn()
     {
         //PlayerTurn
-        
+
     }
     private void EnemyTurn()
     {
@@ -38,22 +42,21 @@ public class TurnBase : MonoBehaviour
 
     public void PlayerTurnEnd()
     {
-
-        if (Turn==0)
+        if (battleState == BattleState.PlayerTurn)
         {
             //PlayerTurnEnd
-     
-            Turn++;
+
+            battleState++;
             Debug.Log("PlayerEndTurn");
         }
     }
     public void EnemyTurnEnd()
     {
-        if (Turn==1)
+        if (battleState == BattleState.EnemyTurn)
         {
             //EnemyTurnEnd
-            Turn--;
-            TurnCounter++;
+            battleState--;
+            turnCounter++;
         }
 
     }
