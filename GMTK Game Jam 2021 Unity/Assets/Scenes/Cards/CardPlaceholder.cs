@@ -31,7 +31,7 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
 
         cardsGameObjects = new List<GameObject>();
         cards = new List<CardDrag>();
-        ResetFMODCardPar();
+        Invoke("ResetFMODCardPar", 2f);
     }
 
     public void CraftFinalCard()
@@ -70,8 +70,8 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
                     //Crafted
                     
                     Debug.Log("Crafted " + cardCrafting.craftedItem);
-
-                    foreach(CardDrag card in registeredCards)
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/cards_music", transform.position);
+                    foreach (CardDrag card in registeredCards)
                     {
                         card.SetCooldown(card.cardItem.cooldownAfterUse);
                     }
@@ -82,10 +82,10 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
                 }
             }
         }
-        FMODUnity.RuntimeManager.PlayOneShot("event:/cards_music", transform.position);
+        
         Debug.Log("crafted");
         //Wrong craft dont deal damage
-        Invoke("RemoveAllItems", 2.9f);
+        RemoveAllItems();
         turnBase.PlayerTurnEnd(0);
         
     }
