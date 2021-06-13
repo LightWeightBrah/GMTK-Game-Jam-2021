@@ -17,3 +17,218 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2264192
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D2F7F3EF48
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF965117D70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF965117D40
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF965117E40
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF965117F00
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000209A2FAFB68
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='card_grab-01', format=5, channels=1, frequency=48000, lengthbytes=3296, lengthpcm=20681, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707346.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2264192
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D2F7F3EF48
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF965117D70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF965117D40
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF965117E40
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF965117F00
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000209A2FAFB68
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='card_grab-02', format=5, channels=1, frequency=48000, lengthbytes=2720, lengthpcm=20491, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.595293.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2264192
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D2F7F3EF48
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF965117D70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF965117D40
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF965117E40
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF965117F00
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000209A2FAFB68
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='card_grab-04', format=5, channels=1, frequency=48000, lengthbytes=3200, lengthpcm=24000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707607.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2264192
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D2F7F3EF48
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF965117D70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF965117D40
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF965117E40
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF965117F00
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000209A2FAFB68
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='card_grab-03', format=5, channels=1, frequency=48000, lengthbytes=2976, lengthpcm=20489, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.705448.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2264192
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D2F7F3EF48
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF965117D70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF965117D40
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF965117E40
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF965117F00
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000209A2FB0198
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='card_deal-04', format=5, channels=1, frequency=48000, lengthbytes=4864, lengthpcm=24048, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707947.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2264192
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D2F7F3EF48
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF965117D70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF965117D40
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF965117E40
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF965117F00
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000209A2FB0198
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='card_deal-01', format=5, channels=1, frequency=48000, lengthbytes=4896, lengthpcm=24000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707947.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2264192
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D2F7F3EF48
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF965117D70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF965117D40
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF965117E40
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF965117F00
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000209A2FB0198
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='card_deal-06', format=5, channels=1, frequency=48000, lengthbytes=5120, lengthpcm=24000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.700260.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2264192
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D2F7F3EF48
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF965117D70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF965117D40
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF965117E40
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF965117F00
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000209A2FB0198
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='card_deal-05', format=5, channels=1, frequency=48000, lengthbytes=4704, lengthpcm=24000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707946.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2264192
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D2F7F3EF48
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF965117D70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF965117D40
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF965117E40
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF965117F00
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000209A2FB0198
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='card_deal-03', format=5, channels=1, frequency=48000, lengthbytes=4928, lengthpcm=24000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707945.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2264192
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D2F7F3EF48
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF965117D70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF965117D40
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF965117E40
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF965117F00
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000209A2FB0198
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='card_deal-02', format=5, channels=1, frequency=48000, lengthbytes=4768, lengthpcm=24000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707946.
+[LOG] SystemI::mixerSuspend                    : Suspending output.
+[LOG] SystemI::mixerResume                     : Resuming output.
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000209C8790B68
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000209C8790B68
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2264192
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 19552
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000D2F7F3EF48
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF965117D70
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF965117D40
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF965117E40
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF965117F00
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000209A2FAF748
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='no_card', format=5, channels=1, frequency=48000, lengthbytes=3168, lengthpcm=14799, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707946.
+[LOG] SoundI::release                          : Crowds, Walla, Exterior, Street Event, Young People Chatting Outside Theatre 01 SND37158 1 (00000209C878C998)
+[LOG] SoundI::release                          :     Crowds, Walla, Exterior, Street Event, Young People Chatting Outside Theatre 01 SND37158 1 (000002099A581FE8)
+[LOG] SoundI::release                          :     Crowds, Walla, Exterior, Street Event, Young People Chatting Outside Theatre 01 SND37158 1 (00000209C8790B68)
+[LOG] SoundI::release                          :  (0000020A61B24508)
+[LOG] SoundI::release                          :     card_grab-01 (000002099A50E9E8)
+[LOG] SoundI::release                          :  (0000020A61B247E8)
+[LOG] SoundI::release                          :     card_grab-02 (000002099A50E508)
+[LOG] SoundI::release                          :  (0000020A61B24228)
+[LOG] SoundI::release                          :     card_grab-03 (000002099DC770B8)
+[LOG] SoundI::release                          :  (0000020A61B24DA8)
+[LOG] SoundI::release                          :     card_grab-04 (000002099A50E848)
+[LOG] SoundI::release                          :  (0000020A61B24398)
+[LOG] SoundI::release                          :     card_deal-01 (000002099DC77258)
+[LOG] SoundI::release                          :  (0000020A61B24AC8)
+[LOG] SoundI::release                          :     card_deal-02 (000002099DC778D8)
+[LOG] SoundI::release                          :  (0000020A61B24958)
+[LOG] SoundI::release                          :     card_deal-03 (000002099DC77598)
+[LOG] SoundI::release                          :  (0000020A61B240B8)
+[LOG] SoundI::release                          :     card_deal-04 (000002099DC77DB8)
+[LOG] SoundI::release                          :  (0000020A61B24C38)
+[LOG] SoundI::release                          :     card_deal-05 (000002099DC77738)
+[LOG] SoundI::release                          :  (0000020A61B24678)
+[LOG] SoundI::release                          :     card_deal-06 (000002099DC773F8)
+[LOG] SoundI::release                          :  (0000020A62255D78)
+[LOG] SoundI::release                          :     no_card (000002099DC77A78)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
