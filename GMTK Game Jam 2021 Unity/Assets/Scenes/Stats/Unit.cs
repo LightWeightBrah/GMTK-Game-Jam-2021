@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class Unit : MonoBehaviour, IDamageable
 {
-    [SerializeField] private GameObject damagePopupParent;
     [SerializeField] private Transform popupPosition;
     [SerializeField] private float maxPopupOffset;
     [SerializeField] private GameObject damagePopup;
@@ -40,7 +39,6 @@ public class Unit : MonoBehaviour, IDamageable
     private void AddDamagePopup(int damage)
     {
         var popup = Instantiate(damagePopup, popupPosition.position, Quaternion.identity);
-        //popup.transform.parent = damagePopupParent.transform;
 
         Vector2 randomPos = (Vector2)popupPosition.transform.position;
         randomPos += new Vector2(UnityEngine.Random.Range(-maxPopupOffset, maxPopupOffset), UnityEngine.Random.Range(-maxPopupOffset, maxPopupOffset));

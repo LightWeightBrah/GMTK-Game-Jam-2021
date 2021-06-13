@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Card 2
   m_EditorClassIdentifier: 
   cardSound: 
-  cardIcon: {fileID: 21300000, guid: 3667f0c334158a641b4b7b94fdff7457, type: 3}
+  cardIcon: {fileID: 21300000, guid: 37c151928a13dce4eb0c1b5b6f2f89e4, type: 3}
   damage: 30
   cooldownAfterUse: 3

@@ -752,3 +752,32 @@
 [LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000209C8791A98
 [LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000209C8791A98
 [LOG] SystemI::mixerSuspend                    : Suspending output.
+[LOG] SystemI::mixerResume                     : Resuming output.
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000209C8791A98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000209C8791A98
+[LOG] SystemI::createSound                     : filename = Assets/FMODbanks\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000209C8B8B778 : node = 000002099DD54660
+[LOG] SystemI::createSound                     : add node to async list : head = 0000020A0E35D1C8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000209C8B8B778
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMODbanks\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2268864
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20768
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002099DD54770
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Crowds, Walla, Exterior, Street Event, Young People Chatting Outside Theatre 01 SND37158 1', format=5, channels=2, frequency=48000, lengthbytes=701440, lengthpcm=2604977, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254621.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000209C8B8B778
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000209C87924B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000209C87924B8
+[LOG] SoundI::release                          : Crowds, Walla, Exterior, Street Event, Young People Chatting Outside Theatre 01 SND37158 1 (00000209C87929C8)
+[LOG] SoundI::release                          :     Crowds, Walla, Exterior, Street Event, Young People Chatting Outside Theatre 01 SND37158 1 (000002099A581968)
+[LOG] SoundI::release                          :     Crowds, Walla, Exterior, Street Event, Young People Chatting Outside Theatre 01 SND37158 1 (00000209C8791A98)
+[LOG] SystemI::mixerSuspend                    : Suspending output.
+[LOG] SystemI::mixerResume                     : Resuming output.
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000209C87924B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000209C87924B8
+[LOG] SystemI::mixerSuspend                    : Suspending output.

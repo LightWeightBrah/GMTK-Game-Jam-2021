@@ -65,14 +65,22 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
                     }
                 }
 
+
+                Debug.Log("temp " + tempCraft.Count);
                 if (tempCraft.Count == 0)
                 {
                     //Crafted
                     
                     Debug.Log("Crafted " + cardCrafting.craftedItem);
+<<<<<<< Updated upstream
                     FMODUnity.RuntimeManager.PlayOneShot("event:/cards_music", transform.position);
+=======
+
+                    Debug.Log("registered " + registeredCards.Count);
+>>>>>>> Stashed changes
                     foreach (CardDrag card in registeredCards)
                     {
+                        Debug.Log("Setting cooldown");
                         card.SetCooldown(card.cardItem.cooldownAfterUse);
                     }
 
@@ -82,8 +90,12 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
                 }
             }
         }
+<<<<<<< Updated upstream
         
         Debug.Log("crafted");
+=======
+        FMODUnity.RuntimeManager.PlayOneShot("event:/cards_music", transform.position);
+>>>>>>> Stashed changes
         //Wrong craft dont deal damage
         RemoveAllItems();
         turnBase.PlayerTurnEnd(0);
@@ -96,10 +108,6 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
         {
             if (eventData.pointerDrag.TryGetComponent<CardDrag>(out CardDrag cardDrag))
             {
-                FMODUnity.RuntimeManager.PlayOneShot("event:/card_deal", transform.position);
-                Debug.Log("added" + cardDrag.cardItem.name);
-
-                FMODUnity.RuntimeManager.StudioSystem.setParameterByName(cardDrag.cardItem.name, 1f);
                 AddCardToCrafting(cardDrag);
             }
         }
@@ -107,12 +115,17 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
 
     private void AddCardToCrafting(CardDrag cardDrag)
     {
-        if (cardDrag.cardCooldown > 0 || !cardDrag.canUse)
+        if (cardDrag.cardCooldown > 0 || !cardDrag.canUse || cards.Count + 1 > cardsIcons.Length)
+        {
+            //Play sound for not being able to add card
             return;
+        }
+
+        FMODUnity.RuntimeManager.PlayOneShot("event:/card_deal", transform.position);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName(cardDrag.cardItem.name, 1f);
 
         cardsGameObjects.Add(cardDrag.gameObject);
         cards.Add(cardDrag);
-        
         
         cardDrag.gameObject.SetActive(false);
 

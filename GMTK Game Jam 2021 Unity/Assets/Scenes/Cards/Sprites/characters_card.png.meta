@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 17a5c6a9c2b3b0141a8fc7a1dc439dc4
+guid: be958f56f8cec4447a51fe9285b86492
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4965117624037838507
-    second: buttonheathbar_0
+      213: 1982370433049182084
+    second: characters_card_1
   - first:
-      213: 2543464722159770828
-    second: buttonheathbar_1
+      213: 17970065664510012
+    second: characters_card_2
   - first:
-      213: 5163679475547130747
-    second: buttonheathbar_2
+      213: -2571168024549084292
+    second: characters_card_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -56,7 +56,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 16, y: 12, z: 1353, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: buttonheathbar_0
+      name: characters_card_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 8
-        width: 379
-        height: 72
+        x: 16
+        y: 12
+        width: 428
+        height: 548
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bae8ec83c24a7e440800000000000000
-      internalID: 4965117624037838507
+      spriteID: 8815e2ff8f43e22f0800000000000000
+      internalID: -995800223564541560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buttonheathbar_1
+      name: characters_card_1
       rect:
         serializedVersion: 2
-        x: 412
-        y: 8
-        width: 204
-        height: 72
+        x: 468
+        y: 16
+        width: 428
+        height: 520
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,29 +171,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccc121f50b33c4320800000000000000
-      internalID: 2543464722159770828
+      spriteID: 48f3223e76bc28b10800000000000000
+      internalID: 1982370433049182084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buttonheathbar_2
+      name: characters_card_2
       rect:
         serializedVersion: 2
-        x: 636
-        y: 8
-        width: 56
-        height: 60
+        x: 912
+        y: 16
+        width: 428
+        height: 516
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 16, y: 0, z: 16, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7b46f9ef1319a740800000000000000
-      internalID: 5163679475547130747
+      spriteID: c380684fda7df3000800000000000000
+      internalID: 17970065664510012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: characters_card_3
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 8
+        width: 428
+        height: 500
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73b8e6ed40615cd0800000000000000
+      internalID: -2571168024549084292
       vertices: []
       indices: 
       edges: []

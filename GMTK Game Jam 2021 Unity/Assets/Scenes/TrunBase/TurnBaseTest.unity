@@ -123,17 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &30657076 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9078667633669605975, guid: 025629516179fe8468177c1d5b636bb0, type: 3}
-  m_PrefabInstance: {fileID: 774476550}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &55628340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -306,17 +295,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63517604}
   m_CullTransparentMesh: 1
---- !u!114 &114470977 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9078667633669605975, guid: 025629516179fe8468177c1d5b636bb0, type: 3}
-  m_PrefabInstance: {fileID: 9078667633697765910}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &163132688
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,7 +415,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28e5584a8dd52094d9b6699e7bc764f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damagePopupParent: {fileID: 618915478}
   popupPosition: {fileID: 1334767604}
   maxPopupOffset: 1
   damagePopup: {fileID: 3514802857141387621, guid: 30a7fe41592526440b380467caca955c, type: 3}
@@ -2020,11 +1997,9 @@ MonoBehaviour:
   possibleCrafts: {fileID: 1394409877}
   defaultCardIcons: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   cardsIcons:
-  - {fileID: 114470977}
-  - {fileID: 1622857256}
-  - {fileID: 1835567881}
-  - {fileID: 30657076}
-  - {fileID: 1532055427}
+  - {fileID: 355243182}
+  - {fileID: 516759357}
+  - {fileID: 355243182}
   allCards:
   - {fileID: 1512358039}
   - {fileID: 2064257991}
@@ -2391,14 +2366,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4249f668616fe449b20c15622090ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverScreen: {fileID: 0}
   cutscenes: {fileID: 1950737919}
   cardPlaceholder: {fileID: 1250518211}
   waitTimeAfterAttack: 2
   chanceForEnemyToMiss: 30
-  playerPrefab: {fileID: 0}
-  enemyPrefab: {fileID: 0}
-  playerStart: {fileID: 0}
-  enemyStart: {fileID: 0}
   battleState: 0
   turnCounter: 0
   player: {fileID: 240536571}
@@ -2671,17 +2643,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513529751}
   m_CullTransparentMesh: 1
---- !u!114 &1532055427 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9078667633669605975, guid: 025629516179fe8468177c1d5b636bb0, type: 3}
-  m_PrefabInstance: {fileID: 1152039329}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &1570625132 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9078667634865204346, guid: 025629516179fe8468177c1d5b636bb0, type: 3}
@@ -2692,17 +2653,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 9078667634865204346, guid: 025629516179fe8468177c1d5b636bb0, type: 3}
   m_PrefabInstance: {fileID: 774476550}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1622857256 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9078667633669605975, guid: 025629516179fe8468177c1d5b636bb0, type: 3}
-  m_PrefabInstance: {fileID: 2082663399}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &1686809255 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9078667634865204346, guid: 025629516179fe8468177c1d5b636bb0, type: 3}
@@ -2898,17 +2848,6 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
---- !u!114 &1835567881 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9078667633669605975, guid: 025629516179fe8468177c1d5b636bb0, type: 3}
-  m_PrefabInstance: {fileID: 55628340}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1926924905
 GameObject:
   m_ObjectHideFlags: 0
@@ -3013,7 +2952,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbc6be3879b6e664cb9e2ee524c7b27b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damagePopupParent: {fileID: 618915478}
   popupPosition: {fileID: 592892700}
   maxPopupOffset: 1
   damagePopup: {fileID: 3514802857141387621, guid: 30a7fe41592526440b380467caca955c, type: 3}
