@@ -660,13 +660,7 @@ MonoBehaviour:
   - {fileID: 8946671751468678198}
   - {fileID: 2756578169014635422}
   - {fileID: 1947400093035135988}
-  EditorParameters:
-  - {fileID: 4712120355326771087}
-  - {fileID: 1029731157964065508}
-  - {fileID: 7141429794986508627}
-  - {fileID: -17194798564687241}
-  - {fileID: -2807594962576632067}
-  - {fileID: -3662678200047925126}
+  EditorParameters: []
   MasterBanks:
   - {fileID: 705258115420266487}
   StringsBanks:
