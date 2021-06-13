@@ -781,3 +781,7 @@
 [LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000209C87924B8
 [LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000209C87924B8
 [LOG] SystemI::mixerSuspend                    : Suspending output.
+[LOG] SystemI::mixerResume                     : Resuming output.
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000209C87924B8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000209C87924B8
+[LOG] SystemI::mixerSuspend                    : Suspending output.

@@ -70,7 +70,7 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
                 if (tempCraft.Count == 0)
                 {
                     //Crafted
-                    
+
                     Debug.Log("Crafted " + cardCrafting.craftedItem);
 
                     FMODUnity.RuntimeManager.PlayOneShot("event:/cards_music", transform.position);
@@ -90,13 +90,14 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
                 }
             }
         }
-        
+
         Debug.Log("crafted");
+
 
         //Wrong craft dont deal damage
         RemoveAllItems();
         turnBase.PlayerTurnEnd(0);
-        
+
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -123,7 +124,7 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
 
         cardsGameObjects.Add(cardDrag.gameObject);
         cards.Add(cardDrag);
-        
+
         cardDrag.gameObject.SetActive(false);
 
         cardDrag.ResetCard();
