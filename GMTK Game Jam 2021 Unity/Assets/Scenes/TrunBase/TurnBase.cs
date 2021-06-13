@@ -15,16 +15,11 @@ public enum BattleState
 }
 public class TurnBase : MonoBehaviour
 {
+    [SerializeField] private GameObject gameOverScreen;
     [SerializeField] private Cutscenes cutscenes;
     [SerializeField] private CardPlaceholder cardPlaceholder;
     [SerializeField] private float waitTimeAfterAttack;
     [SerializeField] private int chanceForEnemyToMiss;
-
-    [SerializeField] private GameObject playerPrefab;
-    [SerializeField] private GameObject enemyPrefab;
-
-    [SerializeField] private Transform playerStart;
-    [SerializeField] private Transform enemyStart;
 
     public BattleState battleState = BattleState.PlayerTurn;
     public int turnCounter;
@@ -39,9 +34,6 @@ public class TurnBase : MonoBehaviour
 
     private void StartBattle()
     {
-        //GameObject player = Instantiate(playerPrefab, playerStart);
-        //GameObject enemy = Instantiate(enemyPrefab, enemyStart);
-
         battleState = BattleState.PlayerTurn;
     }
 
@@ -121,6 +113,7 @@ public class TurnBase : MonoBehaviour
         else if (battleState == BattleState.Lost)
         {
             Debug.Log("player has lost");
+            gameOverScreen.gameObject.SetActive(true);
         }
     }
 }

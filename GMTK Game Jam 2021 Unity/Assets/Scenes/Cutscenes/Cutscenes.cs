@@ -58,7 +58,6 @@ public class Cutscenes : MonoBehaviour
 
     public IEnumerator ShowNextCutscene()
     {
-        Debug.Log("Showing");
         StartFadeToBlack();
 
         yield return new WaitForSeconds(waitToLoad);
@@ -79,12 +78,16 @@ public class Cutscenes : MonoBehaviour
 
     public void StartFadeToBlack()
     {
+        Time.timeScale = 1f;
+
         fadeToBlack = true;
         fadeOutBlack = false;
     }
 
     public void StartFadeOutBlack()
     {
+        Time.timeScale = 1f;
+
         fadeToBlack = false;
         fadeOutBlack = true;
     }
@@ -102,6 +105,20 @@ public class Cutscenes : MonoBehaviour
     public void GoToPage(GameObject pageToActivate)
     {
         StartCoroutine(LoadCredits(pageToActivate));
+    }
+
+    public void GoToScene(string sceneName)
+    {
+        StartCoroutine(ChangeScene(sceneName));
+    }
+
+    private IEnumerator ChangeScene(string sceneName)
+    {
+        StartFadeToBlack();
+
+        yield return new WaitForSeconds(waitToLoad);
+
+        SceneManager.LoadScene(sceneName);
     }
 
     private IEnumerator StartGame()
