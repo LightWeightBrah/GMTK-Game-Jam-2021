@@ -86,6 +86,7 @@ public class TurnBase : MonoBehaviour
                 int index = Random.Range(0, cardPlaceholder.possibleCrafts.allCraftingRecepies.Count);
                 isDead = player.TakeDamage(cardPlaceholder.possibleCrafts.allCraftingRecepies[index].craftedItem.damage);
                 //Enemy damage player
+                FMODUnity.RuntimeManager.PlayOneShot("event:/enemy_tune");
                 FMODUnity.RuntimeManager.PlayOneShot("event:/damage_player");
             }
             else
@@ -119,7 +120,7 @@ public class TurnBase : MonoBehaviour
         if (battleState == BattleState.Won)
         {
             Debug.Log("winning");
-            FMODUnity.RuntimeManager.PlayOneShot("event:/win");
+            //FMODUnity.RuntimeManager.PlayOneShot("event:/win");
             cutscenes.PlayGame();
         }
         else if (battleState == BattleState.Lost)
