@@ -20,6 +20,106 @@ MonoBehaviour:
     data1: 2237637641
     data2: 713569604
   Exists: 1
+--- !u!114 &-8418081820118331727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Card 3
+  m_EditorClassIdentifier: 
+  Name: Card 3
+  Min: 0
+  Max: 1
+  Default: 0.005
+  ID:
+    data1: 2280732914
+    data2: 3525925406
+  Exists: 1
+--- !u!114 &-6729678485571292459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Card 1
+  m_EditorClassIdentifier: 
+  Name: Card 1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2325007678
+    data2: 2721088993
+  Exists: 0
+--- !u!114 &-6554830828227901604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Card 2
+  m_EditorClassIdentifier: 
+  Name: Card 2
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 700145389
+    data2: 1286162472
+  Exists: 0
+--- !u!114 &-4901761767187937982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Card 1
+  m_EditorClassIdentifier: 
+  Name: Card 1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2325007678
+    data2: 2721088993
+  Exists: 1
+--- !u!114 &-3958468643945137132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Card 2
+  m_EditorClassIdentifier: 
+  Name: Card 2
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 700145389
+    data2: 1286162472
+  Exists: 0
 --- !u!114 &-3903140082598472845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,6 +183,66 @@ MonoBehaviour:
     data1: 2325007678
     data2: 2721088993
   Exists: 1
+--- !u!114 &-2802406406541346975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Card 3
+  m_EditorClassIdentifier: 
+  Name: Card 3
+  Min: 0
+  Max: 1
+  Default: 0.005
+  ID:
+    data1: 2280732914
+    data2: 3525925406
+  Exists: 0
+--- !u!114 &-2167110454754608095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Card 6
+  m_EditorClassIdentifier: 
+  Name: Card 6
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 26192430
+    data2: 1335406452
+  Exists: 1
+--- !u!114 &-1959997414154087206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Card 4
+  m_EditorClassIdentifier: 
+  Name: Card 4
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2237637641
+    data2: 713569604
+  Exists: 1
 --- !u!114 &-718724603077831232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,6 +263,26 @@ MonoBehaviour:
     data1: 26192430
     data2: 1335406452
   Exists: 1
+--- !u!114 &-667762933249293485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Card 1
+  m_EditorClassIdentifier: 
+  Name: Card 1
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2325007678
+    data2: 2721088993
+  Exists: 0
 --- !u!114 &-192075438438018516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,7 +318,7 @@ MonoBehaviour:
   Path: Assets/FMODbanks/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637591728380000000
+  lastModified: 637591735140000000
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -167,17 +347,17 @@ MonoBehaviour:
   - {fileID: 8845772128237933108}
   - {fileID: -3903140082598472845}
   EditorParameters:
-  - {fileID: -3596943620245647616}
-  - {fileID: -8589823366948072026}
-  - {fileID: -192075438438018516}
-  - {fileID: -718724603077831232}
-  - {fileID: -3251631590629938897}
-  - {fileID: 1207527887921211055}
+  - {fileID: -8418081820118331727}
+  - {fileID: -1959997414154087206}
+  - {fileID: 1608483317112229312}
+  - {fileID: -2167110454754608095}
+  - {fileID: -4901761767187937982}
+  - {fileID: 2405383617809508756}
   MasterBanks:
   - {fileID: 705258115420266487}
   StringsBanks:
   - {fileID: -188986677807210552}
-  stringsBankWriteTime: 637591728380000000
+  stringsBankWriteTime: 637591735140000000
   cacheVersion: 6
 --- !u!114 &201608228641846963
 MonoBehaviour:
@@ -217,7 +397,7 @@ MonoBehaviour:
   Path: Assets/FMODbanks/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637591728380000000
+  lastModified: 637591735140000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -241,6 +421,66 @@ MonoBehaviour:
     data1: 1189152116
     data2: 223097904
   Exists: 1
+--- !u!114 &1608483317112229312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Card 2
+  m_EditorClassIdentifier: 
+  Name: Card 2
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 700145389
+    data2: 1286162472
+  Exists: 1
+--- !u!114 &2405383617809508756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Card 5
+  m_EditorClassIdentifier: 
+  Name: Card 5
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1189152116
+    data2: 223097904
+  Exists: 1
+--- !u!114 &3024562854116798337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Card 5
+  m_EditorClassIdentifier: 
+  Name: Card 5
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1189152116
+    data2: 223097904
+  Exists: 0
 --- !u!114 &3657598456137849416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,6 +527,86 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 63033
+--- !u!114 &4480647591630738866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Card 5
+  m_EditorClassIdentifier: 
+  Name: Card 5
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1189152116
+    data2: 223097904
+  Exists: 0
+--- !u!114 &6503796435381143106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Card 6
+  m_EditorClassIdentifier: 
+  Name: Card 6
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 26192430
+    data2: 1335406452
+  Exists: 0
+--- !u!114 &6931937783323354084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Card 6
+  m_EditorClassIdentifier: 
+  Name: Card 6
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 26192430
+    data2: 1335406452
+  Exists: 0
+--- !u!114 &7622301706031952704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Card 3
+  m_EditorClassIdentifier: 
+  Name: Card 3
+  Min: 0
+  Max: 1
+  Default: 0.005
+  ID:
+    data1: 2280732914
+    data2: 3525925406
+  Exists: 0
 --- !u!114 &7887069643139772450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,6 +630,46 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 501
+--- !u!114 &7919457541546862432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Card 4
+  m_EditorClassIdentifier: 
+  Name: Card 4
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2237637641
+    data2: 713569604
+  Exists: 0
+--- !u!114 &8021134122528167100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Card 4
+  m_EditorClassIdentifier: 
+  Name: Card 4
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2237637641
+    data2: 713569604
+  Exists: 0
 --- !u!114 &8845772128237933108
 MonoBehaviour:
   m_ObjectHideFlags: 0
