@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Unit : MonoBehaviour, IDamageable
 {
+    [SerializeField] private Transform damagePopupParent;
     [SerializeField] private Transform popupPosition;
     [SerializeField] private float maxPopupOffset;
     [SerializeField] private GameObject damagePopup;
@@ -38,11 +39,14 @@ public class Unit : MonoBehaviour, IDamageable
 
     private void AddDamagePopup(int damage)
     {
-        var popup = Instantiate(damagePopup, popupPosition.position, Quaternion.identity);
+        var popup = Instantiate(damagePopup, damagePopupParent);
+        popup.transform.position = popupPosition.position;
 
-        Vector2 randomPos = (Vector2)popupPosition.transform.position;
-        randomPos += new Vector2(UnityEngine.Random.Range(-maxPopupOffset, maxPopupOffset), UnityEngine.Random.Range(-maxPopupOffset, maxPopupOffset));
-        popup.transform.position = randomPos;
+        Debug.Log("Popup position is " + popup.transform.position);
+
+        //Vector2 randomPos = (Vector2)popupPosition.GetComponent<RectTransform>().anchoredPosition;
+        //randomPos += new Vector2(UnityEngine.Random.Range(-maxPopupOffset, maxPopupOffset), UnityEngine.Random.Range(-maxPopupOffset, maxPopupOffset));
+        //popup.GetComponent<RectTransform>().anchoredPosition = randomPos;
 
         popup.GetComponentInChildren<TextMeshProUGUI>().text = damage.ToString();
         Destroy(popup, 3f);
