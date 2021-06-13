@@ -77,6 +77,9 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
 =======
 
                     Debug.Log("registered " + registeredCards.Count);
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
                     foreach (CardDrag card in registeredCards)
                     {
@@ -91,8 +94,12 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
             }
         }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         
         Debug.Log("crafted");
+=======
+        FMODUnity.RuntimeManager.PlayOneShot("event:/cards_music", transform.position);
+>>>>>>> Stashed changes
 =======
         FMODUnity.RuntimeManager.PlayOneShot("event:/cards_music", transform.position);
 >>>>>>> Stashed changes
