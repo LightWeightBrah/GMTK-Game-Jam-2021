@@ -72,12 +72,12 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
                     //Crafted
                     
                     Debug.Log("Crafted " + cardCrafting.craftedItem);
-<<<<<<< Updated upstream
+
                     FMODUnity.RuntimeManager.PlayOneShot("event:/cards_music", transform.position);
-=======
+
 
                     Debug.Log("registered " + registeredCards.Count);
->>>>>>> Stashed changes
+
                     foreach (CardDrag card in registeredCards)
                     {
                         Debug.Log("Setting cooldown");
@@ -90,12 +90,9 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
                 }
             }
         }
-<<<<<<< Updated upstream
         
         Debug.Log("crafted");
-=======
-        FMODUnity.RuntimeManager.PlayOneShot("event:/cards_music", transform.position);
->>>>>>> Stashed changes
+
         //Wrong craft dont deal damage
         RemoveAllItems();
         turnBase.PlayerTurnEnd(0);
