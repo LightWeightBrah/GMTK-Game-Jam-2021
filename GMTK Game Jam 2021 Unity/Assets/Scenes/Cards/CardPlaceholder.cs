@@ -131,4 +131,9 @@ public class CardPlaceholder : MonoBehaviour, IDropHandler
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Card 6", 0f);
 
     }
+
+    public void playRefreshSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/card_refresh");
+    }
 }
