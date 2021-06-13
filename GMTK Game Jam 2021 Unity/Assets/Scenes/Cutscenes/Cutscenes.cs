@@ -94,6 +94,7 @@ public class Cutscenes : MonoBehaviour
 
     public void PlayGame()
     {
+        
         StartCoroutine(StartGame());
     }
 
@@ -123,6 +124,7 @@ public class Cutscenes : MonoBehaviour
 
     private IEnumerator StartGame()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/start_game");
         StartFadeToBlack();
 
         yield return new WaitForSeconds(waitToLoad);
