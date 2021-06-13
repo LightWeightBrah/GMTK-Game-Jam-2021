@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Card 1
   m_EditorClassIdentifier: 
   itemsToCraft:
-  - {fileID: 11400000, guid: 2a813e3fa2736324b83f597298b892f9, type: 2}
+  - {fileID: 11400000, guid: c157b286f8e733e47b7e07a3bb32a4b0, type: 2}
   craftedItem: {fileID: 11400000, guid: 2a813e3fa2736324b83f597298b892f9, type: 2}
