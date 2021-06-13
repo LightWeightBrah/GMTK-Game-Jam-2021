@@ -8,7 +8,7 @@
 [LOG] DownMix::init                            : done.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001FD24A97238 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001FD24A9B108 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -17,46 +17,50 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::mixerSuspend                    : Suspending output.
+[LOG] SystemI::mixerResume                     : Resuming output.
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FD48A18078
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FD48A18078
+[LOG] SystemI::createSound                     : filename = Assets/FMODbanks\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001FD229B4878 : node = 000001FC925A3020
+[LOG] SystemI::createSound                     : add node to async list : head = 000001FD2534FF28.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FD229B4878
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMODbanks\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2565120
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 36800
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FC925A3130
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Medieval_Dance', format=5, channels=2, frequency=48000, lengthbytes=830208, lengthpcm=3025606, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.932892.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FD229B4878
+[LOG] SoundI::release                          : walla_st (000001FD48A17658)
+[LOG] SoundI::release                          :     walla_st (000001FC9693D578)
+[LOG] SoundI::release                          :     walla_st (000001FD48A18078)
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 2565120
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 36800
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000C6BC6CF5F8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000C6BCB1F628
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF96FEC7D70
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF96FEC7D40
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF96FEC7E40
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF96FEC7F00
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FD24655D68
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001FD24655738
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='no_card', format=5, channels=1, frequency=48000, lengthbytes=3168, lengthpcm=14799, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.707946.
-[LOG] SystemI::createSound                     : filename = Assets/FMODbanks\Desktop/Master.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000001FD229B5448 : node = 000001FC922626D0
-[LOG] SystemI::createSound                     : add node to async list : head = 000001FD24AD24E8.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001FD229B5448
-[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMODbanks\Desktop/Master.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 2565120
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 36800
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001FC922627E0
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Medieval_Dance', format=5, channels=2, frequency=48000, lengthbytes=830208, lengthpcm=3025606, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.932892.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001FD229B5448
-[LOG] SoundI::release                          : walla_st (000001FD229B3438)
-[LOG] SoundI::release                          :     walla_st (000001FC973DBC58)
-[LOG] SoundI::release                          :     walla_st (000001FD229B0A08)
-[LOG] SoundI::release                          : Medieval_Dance (000001FD229B5448)
-[LOG] SoundI::release                          :     Medieval_Dance (000001FC973DE698)
-[LOG] SoundI::release                          :     Medieval_Dance (000001FD229B55F8)
-[LOG] SoundI::release                          :  (000001FC999AEA88)
-[LOG] SoundI::release                          :     no_card (000001FC973DE358)
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='combo_test', format=5, channels=1, frequency=48000, lengthbytes=17536, lengthpcm=144000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.595410.
+[LOG] SoundI::release                          : Medieval_Dance (000001FD229B4878)
+[LOG] SoundI::release                          :     Medieval_Dance (000001FC9693A658)
+[LOG] SoundI::release                          :     Medieval_Dance (000001FD229B50E8)
+[LOG] SoundI::release                          :  (000001FCBA241328)
+[LOG] SoundI::release                          :     combo_test (000001FC9693CD58)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients

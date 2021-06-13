@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Cutscenes/Cutscenes.unity
     guid: 20f7e14abafe49e4bbba7bbf2152af90
   - enabled: 1
-    path: Assets/Scenes/TrunBase/TurnBaseTest Backup.unity
+    path: Assets/Scenes/TrunBase/Scene1.unity
     guid: d311566862fa3e24cbcbeed4257e214c
   m_configObjects: {}
