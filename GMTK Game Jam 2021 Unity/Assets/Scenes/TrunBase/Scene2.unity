@@ -6379,7 +6379,7 @@ MonoBehaviour:
   popupPosition: {fileID: 245421176}
   maxPopupOffset: 30
   damagePopup: {fileID: 5580497488605617040, guid: 06adf0030dc38ad4d83ddbda6b70f7a6, type: 3}
-  maxHealth: 1
+  maxHealth: 1000
 --- !u!4 &1946800907
 Transform:
   m_ObjectHideFlags: 0
