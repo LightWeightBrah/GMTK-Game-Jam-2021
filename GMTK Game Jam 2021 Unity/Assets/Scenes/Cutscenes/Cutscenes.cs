@@ -95,7 +95,15 @@ public class Cutscenes : MonoBehaviour
     public void PlayGame()
     {
         FMODUnity.RuntimeManager.PlayOneShot("event:/start_game");
-        StartCoroutine(StartGame());
+
+        if (cutscenes.Length == 0)
+        {
+            StartCoroutine(StartGameWithoutCutscenes());
+        }
+        else
+        {
+            StartCoroutine(StartGame());
+        }
     }
 
     public void GoBackFromPage(GameObject pageToDisctivate)
@@ -134,6 +142,15 @@ public class Cutscenes : MonoBehaviour
         cutscenes[0].gameObject.SetActive(true);
 
         areCutScenesEnabled = true;
+    }
+
+    private IEnumerator StartGameWithoutCutscenes()
+    {
+        StartFadeToBlack();
+
+        yield return new WaitForSeconds(waitToLoad);
+
+        SceneManager.LoadScene(sceneToLoadAfterCutScenes);
     }
 
     private IEnumerator LoadCredits(GameObject pageToActivate)

@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TrunBase/Scene1.unity
     guid: d311566862fa3e24cbcbeed4257e214c
+  - enabled: 1
+    path: Assets/Scenes/TrunBase/Scene2.unity
+    guid: 18b6c882ddb1ccf46909b2f8ddc22433
+  - enabled: 1
+    path: Assets/Scenes/TrunBase/Scene3.unity
+    guid: 8f01b576ce0a9334abfb947673c30b18
   m_configObjects: {}

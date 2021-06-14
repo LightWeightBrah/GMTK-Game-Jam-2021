@@ -43,7 +43,7 @@ public class TurnBase : MonoBehaviour
         {
             bool isDead = enemy.TakeDamage(damage);
 
-            if(damage == 0)
+            if (damage == 0)
             {
                 FMODUnity.RuntimeManager.PlayOneShot("event:/miss_enemy");
             }
